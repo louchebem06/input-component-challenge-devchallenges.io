@@ -1,2 +1,20 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+	import Input from "$lib/Input.svelte";
+</script>
+
+<svelte:head>
+	<title>Input component challenge</title>
+</svelte:head>
+
+<Input />
+<Input error />
+<Input disabled />
+<Input helperText="Some interesting text" />
+<Input helperText="Some interesting text" error />
+<Input startIcon />
+<Input endIcon />
+<Input value="text" />
+<Input size="sm" />
+<Input size="md" />
+<Input fullWidth />
+<Input multiline row="4" />
